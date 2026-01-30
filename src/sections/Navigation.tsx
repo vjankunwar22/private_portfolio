@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { ArrowRight, Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -84,9 +84,10 @@ const Navigation = () => {
               href="https://wa.me/9818473719"
               target="_blank"
               rel="noreferrer"
-              className="btn-primary text-xs inline-flex items-center justify-center"
+              className="btn-primary text-xs inline-flex items-center justify-center gap-2 group"
             >
               Contact Me
+              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
             </a>
           </div>
 
@@ -120,9 +121,10 @@ const Navigation = () => {
                 href="https://wa.me/9818473719"
                 target="_blank"
                 rel="noreferrer"
-                className="btn-primary text-xs mt-2 w-full inline-flex items-center justify-center"
+                className="btn-primary text-xs mt-2 w-full inline-flex items-center justify-center gap-2 group"
               >
                 Contact Me
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>
           </div>

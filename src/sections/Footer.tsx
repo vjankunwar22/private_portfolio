@@ -101,10 +101,7 @@ const Footer = () => {
           <p className="text-xs text-charcoal/50">
             © {currentYear} Vision Kunwar. All rights reserved.
           </p>
-          <p className="text-xs text-charcoal/50">
-            Designed & developed with{' '}
-            <span className="text-coral-dark">♥</span>
-          </p>
+          
         </div>
       </div>
     </footer>
