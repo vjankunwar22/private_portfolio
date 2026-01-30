@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Jules Studio Color Palette - Beige/Cream Theme */
+    --background: 45 23% 90%; /* #E8E6DC - beige/cream */
+    --foreground: 30 10% 15%; /* Dark text */
+    --card: 40 20% 94%; /* Slightly lighter cream */
+    --card-foreground: 30 10% 15%;
+    --popover: 40 20% 96%;
+    --popover-foreground: 30 10% 15%;
+    --primary: 30 10% 15%; /* Dark for buttons */
+    --primary-foreground: 40 20% 96%;
+    --secondary: 40 15% 88%;
+    --secondary-foreground: 30 10% 15%;
+    --muted: 40 15% 85%;
+    --muted-foreground: 30 8% 45%;
+    --accent: 15 60% 75%; /* Soft coral/peach accent */
+    --accent-foreground: 30 10% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 10% 80%;
+    --input: 40 10% 85%;
+    --ring: 30 10% 15%;
+    --radius: 1rem;
+    
+    /* Custom colors */
+    --cream: 45 23% 90%;
+    --cream-light: 40 20% 96%;
+    --coral: 15 60% 75%;
+    --charcoal: 30 10% 15%;
+    --warm-gray: 30 8% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  
+  .font-sans {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .text-gradient-coral {
+    background: linear-gradient(135deg, #E8A598 0%, #F5D4C8 50%, #E8E6DC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-coral {
+    background: linear-gradient(135deg, #F5D4C8 0%, #E8A598 30%, #E8E6DC 70%, #F5F0E8 100%);
+  }
+  
+  .bg-cream {
+    background-color: hsl(45 23% 90%);
+  }
+  
+  .bg-cream-light {
+    background-color: hsl(40 20% 96%);
+  }
+  
+  .nav-pill {
+    @apply bg-white/80 backdrop-blur-md rounded-full px-6 py-3 shadow-sm border border-black/5;
+  }
+  
+  .btn-primary {
+    @apply bg-[#1a1a1a] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#333] transition-colors duration-200;
+  }
+  
+  .btn-outline {
+    @apply border border-[#1a1a1a] text-[#1a1a1a] px-6 py-3 rounded-full font-medium text-sm hover:bg-[#1a1a1a] hover:text-white transition-colors duration-200;
+  }
+  
+  .tag-pill {
+    @apply inline-flex items-center px-4 py-1.5 rounded-full border border-[#1a1a1a]/20 text-xs font-medium tracking-wider uppercase;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24;
+  }
+  
+  .card-rounded {
+    @apply rounded-[2rem] overflow-hidden;
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, 
+      rgba(245, 212, 200, 0.8) 0%, 
+      rgba(232, 165, 152, 0.6) 25%,
+      rgba(232, 230, 220, 0.4) 60%,
+      rgba(245, 240, 232, 0.2) 100%);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
