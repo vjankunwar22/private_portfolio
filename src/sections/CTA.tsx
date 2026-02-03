@@ -28,6 +28,31 @@ const CTA = () => {
     return () => observer.disconnect();
   }, []);
 
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const name = String(formData.get('name') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const company = String(formData.get('company') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+
+    const subject = `New contact form submission from ${name || 'your site'}`;
+    const bodyLines = [
+      `Name: ${name || 'N/A'}`,
+      `Email: ${email || 'N/A'}`,
+      `Company / Website: ${company || 'N/A'}`,
+      '',
+      message || 'No message provided.',
+    ];
+
+    const mailto = `mailto:vjankunwar22@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+
+    window.location.href = mailto;
+  };
+
   return (
     <section
       id="contact"
@@ -75,10 +100,8 @@ const CTA = () => {
             </div>
 
             <form
+              onSubmit={handleSubmit}
               className="bg-cream/60 rounded-2xl p-5 sm:p-6 border border-coral-light/40"
-              action="mailto:vjankunwar22@gmail.com"
-              method="post"
-              encType="text/plain"
             >
               <div className="grid gap-4">
                 <div className="grid gap-2">
@@ -126,7 +149,10 @@ const CTA = () => {
                     placeholder="A short summary, timeline, and goals"
                   />
                 </div>
-                <button className="btn-primary inline-flex items-center justify-center gap-2 group w-full">
+                <button
+                  type="submit"
+                  className="btn-primary inline-flex items-center justify-center gap-2 group w-full"
+                >
                   Send Message
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </button>
