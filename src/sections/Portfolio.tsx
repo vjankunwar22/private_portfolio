@@ -70,7 +70,7 @@ const Portfolio = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12 sm:mb-16">
-          <p className="reveal opacity-0 text-sm font-medium tracking-wider text-charcoal/60 uppercase mb-4">
+          <p className="reveal opacity-0 text-sm font-medium tracking-wider text-white/60 uppercase mb-4">
             Selected work...
           </p>
         </div>
@@ -116,7 +116,7 @@ const Portfolio = () => {
                       </span>
                     ))}
                   </div>
-                  <h3 className="font-serif text-xl sm:text-2xl text-charcoal mb-2 group-hover:text-coral-dark transition-colors">
+                  <h3 className="font-serif text-xl sm:text-2xl text-white mb-2 group-hover:text-coral-dark transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-sm text-charcoal/60">{project.category}</p>

@@ -66,6 +66,22 @@
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
+  .text-coral-dark {
+    @apply text-[#F0C660];
+  }
+  
+  .text-coral-light {
+    @apply text-[#FFD700];
+  }
+  
+  .bg-coral-dark {
+    @apply bg-[#F0C660];
+  }
+  
+  .bg-coral-light {
+    @apply bg-[#F0C660]/20;
+  }
+  
   .text-gradient-coral {
     background: linear-gradient(135deg, #F0C660 0%, #FFD700 50%, #E8B923 100%);
     -webkit-background-clip: text;

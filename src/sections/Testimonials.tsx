@@ -70,31 +70,31 @@ const Testimonials = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="reveal opacity-0 text-sm font-medium tracking-wider text-charcoal/60 uppercase">
+          <p className="reveal opacity-0 text-sm font-medium tracking-wider text-white/60 uppercase">
             Experience highlights
           </p>
         </div>
 
         {/* Testimonial Card */}
         <div className="reveal opacity-0 relative" style={{ animationDelay: '0.1s' }}>
-          <div className="card-rounded bg-white p-8 sm:p-12 lg:p-16 shadow-soft">
+          <div className="card-rounded bg-white/10 p-8 sm:p-12 lg:p-16 shadow-soft border border-white/20">
             {/* Quote Icon */}
             <div className="absolute -top-4 left-8 sm:left-12">
-              <div className="w-10 h-10 rounded-full bg-coral-light flex items-center justify-center">
-                <Quote className="w-5 h-5 text-coral-dark" />
+            <div className="w-10 h-10 rounded-full bg-coral-dark/20 flex items-center justify-center">
+              <Quote className="w-5 h-5 text-coral-dark" />
               </div>
             </div>
 
             {/* Content */}
             <div className="min-h-[200px] flex flex-col justify-center">
-              <p className="font-serif text-xl sm:text-2xl lg:text-3xl text-charcoal leading-relaxed mb-8">
+              <p className="font-serif text-xl sm:text-2xl lg:text-3xl text-white leading-relaxed mb-8">
                 "{testimonials[currentIndex].quote}"
               </p>
               <div>
-                <p className="font-medium text-charcoal">
+                <p className="font-medium text-white">
                   —{testimonials[currentIndex].author}
                 </p>
-                <p className="text-sm text-charcoal/60 mt-1">
+                <p className="text-sm text-white/60 mt-1">
                   {testimonials[currentIndex].role}
                 </p>
               </div>
@@ -105,7 +105,7 @@ const Testimonials = () => {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={prevTestimonial}
-              className="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-cream transition-colors"
+              className="w-10 h-10 rounded-full bg-white/10 shadow-soft flex items-center justify-center hover:bg-white/20 transition-colors border border-white/20"
               aria-label="Previous testimonial"
             >
               <ChevronLeft className="w-5 h-5 text-charcoal" />

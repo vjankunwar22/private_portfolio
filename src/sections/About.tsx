@@ -40,21 +40,21 @@ const About = () => {
               />
             </div>
             {/* Decorative Element */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-coral-light/30 -z-10" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-coral-dark/10 -z-10" />
           </div>
 
           {/* Content */}
           <div>
-            <p className="reveal opacity-0 text-sm font-medium tracking-wider text-charcoal/60 uppercase mb-4">
+            <p className="reveal opacity-0 text-sm font-medium tracking-wider text-white/60 uppercase mb-4">
               Meet the developer
             </p>
-            <h2 className="reveal opacity-0 font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal mb-6" style={{ animationDelay: '0.1s' }}>
+            <h2 className="reveal opacity-0 font-serif text-3xl sm:text-4xl lg:text-5xl text-white mb-6" style={{ animationDelay: '0.1s' }}>
               Inspired by creation,{' '}
               <span className="italic text-coral-dark">
                 dedicated to code.
               </span>
             </h2>
-            <div className="reveal opacity-0 space-y-4 text-charcoal/70 leading-relaxed" style={{ animationDelay: '0.2s' }}>
+            <div className="reveal opacity-0 space-y-4 text-white/70 leading-relaxed" style={{ animationDelay: '0.2s' }}>
               <p>
                 Passionate full stack developer with expertise in modern web
                 technologies including tRPC, PostgreSQL, and Prisma ORM. I deliver
@@ -73,10 +73,10 @@ const About = () => {
             </div>
 
             <div className="reveal opacity-0 mt-6" style={{ animationDelay: '0.25s' }}>
-              <h3 className="text-sm font-semibold tracking-wider text-charcoal/60 uppercase mb-3">
+              <h3 className="text-sm font-semibold tracking-wider text-white/60 uppercase mb-3">
                 Education
               </h3>
-              <ul className="space-y-2 text-sm text-charcoal/70">
+              <ul className="space-y-2 text-sm text-white/70">
                 <li>
                   BSc in Computer Science, Leeds Beckett University
                 </li>
@@ -93,7 +93,7 @@ const About = () => {
             <div className="reveal opacity-0 flex gap-4 mt-8" style={{ animationDelay: '0.3s' }}>
               <a
                 href="mailto:vjankunwar22@gmail.com"
-                className="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-coral-light/30 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 shadow-soft flex items-center justify-center hover:bg-coral-dark/20 transition-colors border border-white/20"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4 text-charcoal" />
@@ -102,7 +102,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/vision-kunwar-94b498232"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-coral-light/30 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 shadow-soft flex items-center justify-center hover:bg-coral-dark/20 transition-colors border border-white/20"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4 text-charcoal" />
@@ -111,7 +111,7 @@ const About = () => {
                 href="https://github.com/vjankunwar22"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-coral-light/30 transition-colors"
+                className="w-10 h-10 rounded-full bg-white/10 shadow-soft flex items-center justify-center hover:bg-coral-dark/20 transition-colors border border-white/20"
                 aria-label="GitHub"
               >
                 <Github className="w-4 h-4 text-charcoal" />

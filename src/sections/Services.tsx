@@ -69,7 +69,7 @@ const Services = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-16">
-          <h2 className="reveal opacity-0 font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal">
+          <h2 className="reveal opacity-0 font-serif text-3xl sm:text-4xl lg:text-5xl text-white">
             How I
             <br />
             can <span className="italic text-coral-dark">help you...</span>
@@ -84,17 +84,17 @@ const Services = () => {
               className="reveal opacity-0 group"
               style={{ animationDelay: `${0.1 + index * 0.08}s` }}
             >
-              <div className="h-full p-6 sm:p-8 rounded-3xl bg-white/60 backdrop-blur-sm border border-black/5 hover:bg-white hover:shadow-soft transition-all duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-cream mb-5 group-hover:bg-coral-light/30 transition-colors">
+              <div className="h-full p-6 sm:p-8 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/15 hover:shadow-soft transition-all duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/10 mb-5 group-hover:bg-coral-light/40 transition-colors">
                   <service.icon
                     className="w-5 h-5 text-coral-dark"
                     strokeWidth={1.5}
                   />
                 </div>
-                <h3 className="font-serif text-lg sm:text-xl text-charcoal mb-3">
+                <h3 className="font-serif text-lg sm:text-xl text-white mb-3">
                   {service.title}
                 </h3>
-                <p className="text-sm text-charcoal/70 leading-relaxed">
+                <p className="text-sm text-white/70 leading-relaxed">
                   {service.description}
                 </p>
               </div>

@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-12 sm:py-16 bg-cream px-4 sm:px-6 lg:px-8 border-t border-black/5">
+    <footer className="py-12 sm:py-16 bg-background px-4 sm:px-6 lg:px-8 border-t border-white/10">
       <div className="max-w-6xl mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
@@ -22,15 +22,15 @@ const Footer = () => {
                 e.preventDefault();
                 scrollToSection('#home');
               }}
-              className="font-serif text-2xl text-charcoal tracking-tight inline-block mb-4"
+              className="font-serif text-2xl text-white tracking-tight inline-block mb-4"
             >
               vision<span className="text-coral-dark">.</span>dev
             </a>
-            <p className="text-sm text-charcoal/60 max-w-sm leading-relaxed">
+            <p className="text-sm text-white/60 max-w-sm leading-relaxed">
               Full stack software developer based in Kathmandu, Nepal, focused on
               building reliable, scalable web applications.
             </p>
-            <div className="mt-4 text-sm text-charcoal/60 space-y-1">
+            <div className="mt-4 text-sm text-white/60 space-y-1">
               <p>Phone: +977-9818473719</p>
               <p>Email: vjankunwar22@gmail.com</p>
               <p>LinkedIn: vision-kunwar-94b498232</p>
@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-medium text-charcoal mb-4">Quick Links</h4>
+            <h4 className="font-medium text-white mb-4">Quick Links</h4>
             <ul className="space-y-2.5">
               {[
                 { label: 'Home', href: '#home' },
@@ -54,7 +54,7 @@ const Footer = () => {
                       e.preventDefault();
                       scrollToSection(link.href);
                     }}
-                    className="text-sm text-charcoal/60 hover:text-charcoal transition-colors"
+                    className="text-sm text-white/60 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -65,20 +65,20 @@ const Footer = () => {
 
           {/* Connect */}
           <div>
-            <h4 className="font-medium text-charcoal mb-4">Connect</h4>
+            <h4 className="font-medium text-white mb-4">Connect</h4>
             <div className="flex gap-3">
               <a
                 href="mailto:vjankunwar22@gmail.com"
-                className="w-9 h-9 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-coral-light/30 transition-colors"
+                className="w-9 h-9 rounded-full bg-white/10 shadow-soft flex items-center justify-center hover:bg-coral-dark/20 transition-colors border border-white/20"
                 aria-label="Email"
               >
-                <Mail className="w-4 h-4 text-charcoal" />
+                <Mail className="w-4 h-4 text-white" />
               </a>
               <a
                 href="https://www.linkedin.com/in/vision-kunwar-94b498232"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-coral-light/30 transition-colors"
+                className="w-9 h-9 rounded-full bg-white/10 shadow-soft flex items-center justify-center hover:bg-coral-dark/20 transition-colors border border-white/20"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4 text-charcoal" />
@@ -87,7 +87,7 @@ const Footer = () => {
                 href="https://github.com/vjankunwar22"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-white shadow-soft flex items-center justify-center hover:bg-coral-light/30 transition-colors"
+                className="w-9 h-9 rounded-full bg-white/10 shadow-soft flex items-center justify-center hover:bg-coral-dark/20 transition-colors border border-white/20"
                 aria-label="GitHub"
               >
                 <Github className="w-4 h-4 text-charcoal" />
@@ -97,8 +97,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-black/5 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-charcoal/50">
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-white/50">
             © {currentYear} Vision Kunwar. All rights reserved.
           </p>
           

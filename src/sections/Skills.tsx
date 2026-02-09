@@ -71,13 +71,14 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto">
         {/* Focus Areas */}
         <div className="mb-20">
-          <h3 className="reveal opacity-0 font-serif text-2xl sm:text-3xl text-charcoal mb-8 text-center">
+          <h3 className="reveal opacity-0 font-serif text-2xl sm:text-3xl text-white mb-8 text-center">
             Focus Areas
           </h3>
           <div className="reveal opacity-0 flex flex-wrap justify-center gap-3 sm:gap-4" style={{ animationDelay: '0.1s' }}>
             {clients.map((client) => (
               <span
                 key={client}
+                className="px-4 py-2 rounded-full bg-white/10 text-white/80 text-xs sm:text-sm font-medium border border-white/20"
                 className="px-5 py-2.5 rounded-full bg-white shadow-soft text-sm text-charcoal/80"
               >
                 {client}

@@ -61,28 +61,28 @@ const CTA = () => {
     >
       <div className="max-w-4xl mx-auto">
         {/* Contact Form */}
-        <div className="reveal opacity-0 card-rounded bg-white p-6 sm:p-10 lg:p-12 shadow-soft mb-8">
+        <div className="reveal opacity-0 card-rounded bg-white/10 p-6 sm:p-10 lg:p-12 shadow-soft mb-8 border border-white/20">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_1fr] items-start">
             <div>
-              <p className="text-sm font-medium tracking-wider text-charcoal/60 uppercase mb-3">
+              <p className="text-sm font-medium tracking-wider text-white/60 uppercase mb-3">
                 Let&apos;s talk
               </p>
-              <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-charcoal mb-4">
+              <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-white mb-4">
                 Start with a{' '}
                 <span className="text-coral-dark">free</span> tech audit
               </h3>
-              <p className="text-sm sm:text-base text-charcoal/70 mb-6">
+              <p className="text-sm sm:text-base text-white/70 mb-6">
                 Tell me a bit about your project and I&apos;ll follow up within 24 hours.
               </p>
               <div className="mb-6">
-                <p className="text-sm font-medium text-charcoal mb-4">What you receive:</p>
+                <p className="text-sm font-medium text-white mb-4">What you receive:</p>
                 <ul className="space-y-3">
                   {benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-coral-light/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <li key={benefit} className="flex items-start gap-3">
+                      <div className="w-5 h-5 rounded-full bg-coral-dark/30 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <Check className="w-3 h-3 text-coral-dark" />
                       </div>
-                      <span className="text-sm text-charcoal/70">{benefit}</span>
+                      <span className="text-sm text-white/70">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -101,7 +101,7 @@ const CTA = () => {
 
             <form
               onSubmit={handleSubmit}
-              className="bg-cream/60 rounded-2xl p-5 sm:p-6 border border-coral-light/40"
+              className="bg-white/10 rounded-2xl p-5 sm:p-6 border border-white/20"
             >
               <div className="grid gap-4">
                 <div className="grid gap-2">
@@ -111,7 +111,7 @@ const CTA = () => {
                   <input
                     name="name"
                     required
-                    className="w-full rounded-xl border border-charcoal/10 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-coral-light"
+                    className="w-full rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-coral-dark"
                     placeholder="Your full name"
                   />
                 </div>
@@ -123,7 +123,7 @@ const CTA = () => {
                     type="email"
                     name="email"
                     required
-                    className="w-full rounded-xl border border-charcoal/10 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-coral-light"
+                    className="w-full rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-coral-dark"
                     placeholder="you@company.com"
                   />
                 </div>
@@ -133,7 +133,7 @@ const CTA = () => {
                   </label>
                   <input
                     name="company"
-                    className="w-full rounded-xl border border-charcoal/10 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-coral-light"
+                    className="w-full rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-coral-dark"
                     placeholder="Optional"
                   />
                 </div>
@@ -145,7 +145,7 @@ const CTA = () => {
                     name="message"
                     rows={5}
                     required
-                    className="w-full rounded-xl border border-charcoal/10 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-coral-light"
+                    className="w-full rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-coral-dark"
                     placeholder="A short summary, timeline, and goals"
                   />
                 </div>
@@ -169,7 +169,7 @@ const CTA = () => {
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-charcoal mb-6">
             Ready to bring your
             <br />
-            <span className="italic text-coral-dark">ideas to life?</span>
+              <span className="italic text-coral-dark">ideas to life</span>?
           </h2>
           <a
             href="https://wa.me/9818473719"

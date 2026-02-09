@@ -37,18 +37,18 @@ const Hero = () => {
             <div className="relative z-10">
               {/* Tag */}
               <div className="reveal opacity-0 mb-6">
-                <span className="tag-pill bg-white/60 backdrop-blur-sm">
+                <span className="tag-pill bg-black/30 backdrop-blur-sm text-white/90 border-gold/40">
                   SOFTWARE DEVELOPER
                 </span>
               </div>
 
               {/* Main Heading */}
               <div className="reveal opacity-0 mb-8" style={{ animationDelay: '0.1s' }}>
-                <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-charcoal leading-[1.1]">
+                <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-[1.1]">
                   Vision{' '}
                   <span className="italic text-coral-dark">Kunwar</span>
                 </h1>
-                <p className="mt-3 text-sm sm:text-base text-charcoal/70">
+                <p className="mt-3 text-sm sm:text-base text-white/70">
                   Software Developer | Full Stack Developer
                 </p>
                
@@ -57,15 +57,15 @@ const Hero = () => {
               {/* Service Tags */}
               <div className="reveal opacity-0 mb-8" style={{ animationDelay: '0.2s' }}>
                 <div className="flex flex-wrap items-center gap-2 sm:gap-4">
-                  <span className="text-xs sm:text-sm font-medium tracking-wider text-charcoal/70 uppercase">
+                  <span className="text-xs sm:text-sm font-medium tracking-wider text-white/70 uppercase">
                     FULL STACK
                   </span>
-                  <span className="hidden sm:block w-px h-4 bg-charcoal/20" />
-                  <span className="text-xs sm:text-sm font-medium tracking-wider text-charcoal/70 uppercase">
+                  <span className="hidden sm:block w-px h-4 bg-white/20" />
+                  <span className="text-xs sm:text-sm font-medium tracking-wider text-white/70 uppercase">
                     FRONTEND
                   </span>
-                  <span className="hidden sm:block w-px h-4 bg-charcoal/20" />
-                  <span className="text-xs sm:text-sm font-medium tracking-wider text-charcoal/70 uppercase">
+                  <span className="hidden sm:block w-px h-4 bg-white/20" />
+                  <span className="text-xs sm:text-sm font-medium tracking-wider text-white/70 uppercase">
                     BACKEND
                   </span>
                 </div>
@@ -73,7 +73,7 @@ const Hero = () => {
 
               {/* Description */}
               <div className="reveal opacity-0 max-w-md" style={{ animationDelay: '0.3s' }}>
-                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
+                <p className="text-sm sm:text-base text-white/70 leading-relaxed">
                    I'm Vision, a passionate software developer with over 2 years of
                 experience building digital products that make a difference. If you
                 ask me what drives me, it's the thrill of turning ideas into reality
