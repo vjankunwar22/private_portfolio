@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,34 +6,34 @@
 
 @layer base {
   :root {
-    /* Jules Studio Color Palette - Dark Masculine Theme */
-    --background: 220 13% 13%; /* #1a1f2e - dark navy */
-    --foreground: 0 0% 95%; /* #f2f2f2 - near white */
-    --card: 220 14% 20%; /* Slightly lighter dark navy */
-    --card-foreground: 0 0% 95%;
-    --popover: 220 14% 22%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 45 93% 56%; /* Bold gold */
-    --primary-foreground: 220 13% 13%;
-    --secondary: 220 15% 35%;
-    --secondary-foreground: 0 0% 95%;
-    --muted: 220 12% 40%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 45 93% 56%; /* Bold gold accent */
-    --accent-foreground: 220 13% 13%;
+    /* Luxury Minimalist Color Palette - Black & White with Red Accents */
+    --background: 0 0% 0%; /* Pure black #000000 */
+    --foreground: 0 0% 100%; /* Pure white #ffffff */
+    --card: 0 0% 5%; /* Almost black */
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 100% 50%; /* Vibrant red #FF0000 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 40%;
+    --muted-foreground: 0 0% 100%;
+    --accent: 0 100% 50%; /* Red accent */
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 14% 28%;
-    --input: 220 14% 25%;
-    --ring: 45 93% 56%;
-    --radius: 1rem;
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 0 100% 50%;
+    --radius: 0.5rem;
     
     /* Custom colors */
-    --cream: 220 13% 13%;
-    --cream-light: 220 14% 20%;
-    --coral: 45 93% 56%;
-    --charcoal: 220 13% 13%;
-    --warm-gray: 220 12% 40%;
+    --cream: 0 0% 0%;
+    --cream-light: 0 0% 5%;
+    --coral: 0 100% 50%;
+    --charcoal: 0 0% 0%;
+    --warm-gray: 0 0% 40%;
   }
 }
 
@@ -49,11 +49,13 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.01em;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 400;
+    font-family: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -67,54 +69,54 @@
   }
   
   .text-coral-dark {
-    @apply text-[#F0C660];
+    @apply text-[#FF0000];
   }
   
   .text-coral-light {
-    @apply text-[#FFD700];
+    @apply text-[#FF3333];
   }
   
   .bg-coral-dark {
-    @apply bg-[#F0C660];
+    @apply bg-[#FF0000];
   }
   
   .bg-coral-light {
-    @apply bg-[#F0C660]/20;
+    @apply bg-[#FF0000]/10;
   }
   
   .text-gradient-coral {
-    background: linear-gradient(135deg, #F0C660 0%, #FFD700 50%, #E8B923 100%);
+    background: linear-gradient(135deg, #FF0000 0%, #FF3333 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .bg-gradient-coral {
-    background: linear-gradient(135deg, #1a1f2e 0%, #2a3142 50%, #1f2735 100%);
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
   }
   
   .bg-cream {
-    background-color: hsl(220 13% 13%);
+    background-color: hsl(0 0% 0%);
   }
   
   .bg-cream-light {
-    background-color: hsl(220 14% 20%);
+    background-color: hsl(0 0% 5%);
   }
   
   .nav-pill {
-    @apply bg-black/40 backdrop-blur-md rounded-full px-6 py-3 shadow-sm border border-white/10;
+    @apply bg-black/50 backdrop-blur-md rounded-lg px-6 py-3 shadow-sm border border-white/20;
   }
   
   .btn-primary {
-    @apply bg-[#F0C660] text-[#1a1f2e] px-6 py-3 rounded-full font-medium text-sm hover:bg-[#FFD700] transition-colors duration-200;
+    @apply bg-[#FF0000] text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-[#CC0000] transition-colors duration-200;
   }
   
   .btn-outline {
-    @apply border border-[#F0C660] text-[#F0C660] px-6 py-3 rounded-full font-medium text-sm hover:bg-[#F0C660] hover:text-[#1a1f2e] transition-colors duration-200;
+    @apply border border-white text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-white hover:text-black transition-colors duration-200;
   }
   
   .tag-pill {
-    @apply inline-flex items-center px-4 py-1.5 rounded-full border border-[#F0C660]/30 text-xs font-medium tracking-wider uppercase;
+    @apply inline-flex items-center px-4 py-1.5 rounded-lg border border-white/30 text-xs font-semibold tracking-widest uppercase;
   }
   
   .section-padding {
@@ -127,10 +129,9 @@
   
   .hero-gradient {
     background: linear-gradient(135deg, 
-      rgba(42, 49, 66, 0.8) 0%, 
-      rgba(32, 38, 52, 0.6) 25%,
-      rgba(26, 31, 46, 0.4) 60%,
-      rgba(20, 24, 36, 0.2) 100%);
+      rgba(0, 0, 0, 0.9) 0%, 
+      rgba(20, 20, 20, 0.7) 50%,
+      rgba(0, 0, 0, 0.4) 100%);
   }
 }
 
