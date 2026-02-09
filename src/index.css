@@ -6,34 +6,34 @@
 
 @layer base {
   :root {
-    /* Jules Studio Color Palette - Beige/Cream Theme */
-    --background: 45 23% 90%; /* #E8E6DC - beige/cream */
-    --foreground: 30 10% 15%; /* Dark text */
-    --card: 40 20% 94%; /* Slightly lighter cream */
-    --card-foreground: 30 10% 15%;
-    --popover: 40 20% 96%;
-    --popover-foreground: 30 10% 15%;
-    --primary: 30 10% 15%; /* Dark for buttons */
-    --primary-foreground: 40 20% 96%;
-    --secondary: 40 15% 88%;
-    --secondary-foreground: 30 10% 15%;
-    --muted: 40 15% 85%;
-    --muted-foreground: 30 8% 45%;
-    --accent: 15 60% 75%; /* Soft coral/peach accent */
-    --accent-foreground: 30 10% 15%;
+    /* Jules Studio Color Palette - Dark Masculine Theme */
+    --background: 220 13% 13%; /* #1a1f2e - dark navy */
+    --foreground: 0 0% 95%; /* #f2f2f2 - near white */
+    --card: 220 14% 20%; /* Slightly lighter dark navy */
+    --card-foreground: 0 0% 95%;
+    --popover: 220 14% 22%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 45 93% 56%; /* Bold gold */
+    --primary-foreground: 220 13% 13%;
+    --secondary: 220 15% 35%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 220 12% 40%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 45 93% 56%; /* Bold gold accent */
+    --accent-foreground: 220 13% 13%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 40 10% 80%;
-    --input: 40 10% 85%;
-    --ring: 30 10% 15%;
+    --border: 220 14% 28%;
+    --input: 220 14% 25%;
+    --ring: 45 93% 56%;
     --radius: 1rem;
     
     /* Custom colors */
-    --cream: 45 23% 90%;
-    --cream-light: 40 20% 96%;
-    --coral: 15 60% 75%;
-    --charcoal: 30 10% 15%;
-    --warm-gray: 30 8% 45%;
+    --cream: 220 13% 13%;
+    --cream-light: 220 14% 20%;
+    --coral: 45 93% 56%;
+    --charcoal: 220 13% 13%;
+    --warm-gray: 220 12% 40%;
   }
 }
 
@@ -67,38 +67,38 @@
   }
   
   .text-gradient-coral {
-    background: linear-gradient(135deg, #E8A598 0%, #F5D4C8 50%, #E8E6DC 100%);
+    background: linear-gradient(135deg, #F0C660 0%, #FFD700 50%, #E8B923 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .bg-gradient-coral {
-    background: linear-gradient(135deg, #F5D4C8 0%, #E8A598 30%, #E8E6DC 70%, #F5F0E8 100%);
+    background: linear-gradient(135deg, #1a1f2e 0%, #2a3142 50%, #1f2735 100%);
   }
   
   .bg-cream {
-    background-color: hsl(45 23% 90%);
+    background-color: hsl(220 13% 13%);
   }
   
   .bg-cream-light {
-    background-color: hsl(40 20% 96%);
+    background-color: hsl(220 14% 20%);
   }
   
   .nav-pill {
-    @apply bg-white/80 backdrop-blur-md rounded-full px-6 py-3 shadow-sm border border-black/5;
+    @apply bg-black/40 backdrop-blur-md rounded-full px-6 py-3 shadow-sm border border-white/10;
   }
   
   .btn-primary {
-    @apply bg-[#1a1a1a] text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-[#333] transition-colors duration-200;
+    @apply bg-[#F0C660] text-[#1a1f2e] px-6 py-3 rounded-full font-medium text-sm hover:bg-[#FFD700] transition-colors duration-200;
   }
   
   .btn-outline {
-    @apply border border-[#1a1a1a] text-[#1a1a1a] px-6 py-3 rounded-full font-medium text-sm hover:bg-[#1a1a1a] hover:text-white transition-colors duration-200;
+    @apply border border-[#F0C660] text-[#F0C660] px-6 py-3 rounded-full font-medium text-sm hover:bg-[#F0C660] hover:text-[#1a1f2e] transition-colors duration-200;
   }
   
   .tag-pill {
-    @apply inline-flex items-center px-4 py-1.5 rounded-full border border-[#1a1a1a]/20 text-xs font-medium tracking-wider uppercase;
+    @apply inline-flex items-center px-4 py-1.5 rounded-full border border-[#F0C660]/30 text-xs font-medium tracking-wider uppercase;
   }
   
   .section-padding {
@@ -111,10 +111,10 @@
   
   .hero-gradient {
     background: linear-gradient(135deg, 
-      rgba(245, 212, 200, 0.8) 0%, 
-      rgba(232, 165, 152, 0.6) 25%,
-      rgba(232, 230, 220, 0.4) 60%,
-      rgba(245, 240, 232, 0.2) 100%);
+      rgba(42, 49, 66, 0.8) 0%, 
+      rgba(32, 38, 52, 0.6) 25%,
+      rgba(26, 31, 46, 0.4) 60%,
+      rgba(20, 24, 36, 0.2) 100%);
   }
 }
 
